@@ -1,0 +1,19 @@
+<div class="header">
+  <div class="container">
+    <h1>J-Rod</h1>
+  </div>
+</div>
+
+<div class="tags">
+  <div class="container">
+    <div class="cards row">
+    	<% @stuff.each do |s| %>
+      <div class="card col-xs-4">
+        <%= image_tag s.image %>
+        <h2><%= s.name %></h2>
+        <h2><%= s.description %></h2>
+      </div>
+      <% end %>
+    </div>
+  </div>
+</div>
